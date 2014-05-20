@@ -226,6 +226,11 @@
 			attributes = {
 				CLASSPREFIX = JYJ;
 				LastUpgradeCheck = 0460;
+				TargetAttributes = {
+					0895061517AFEC800057ECDF = {
+						DevelopmentTeam = 2GPQ8GE99T;
+					};
+				};
 			};
 			buildConfigurationList = 0895061117AFEC800057ECDF /* Build configuration list for PBXProject "Next Bus App" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -366,11 +371,14 @@
 		0895063A17AFEC800057ECDF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Next Bus App/Next Bus App-Prefix.pch";
 				INFOPLIST_FILE = "Next Bus App/Next Bus App-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -378,11 +386,14 @@
 		0895063B17AFEC800057ECDF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Next Bus App/Next Bus App-Prefix.pch";
 				INFOPLIST_FILE = "Next Bus App/Next Bus App-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
