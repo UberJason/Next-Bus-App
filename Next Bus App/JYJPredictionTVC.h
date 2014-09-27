@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "JYJPredictionFetchModel.h"
+#import "TwoLabelTableViewCell.h"
 
 @interface JYJPredictionTVC : UIViewController <UITableViewDataSource, UITableViewDelegate, UIAlertViewDelegate>
 

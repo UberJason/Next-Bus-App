@@ -33,6 +33,9 @@
 		0895065F17B08A750057ECDF /* JYJStopListTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0895065E17B08A750057ECDF /* JYJStopListTVC.m */; };
 		08DF753317B2C8A000EE4A7C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08DF753217B2C8A000EE4A7C /* QuartzCore.framework */; };
 		96195D5317E6166D00215CCF /* JYJPredictionTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 96195D5217E6166D00215CCF /* JYJPredictionTVC.m */; };
+		9676DEA619D75D730024192F /* TwoLabelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9676DEA519D75D730024192F /* TwoLabelTableViewCell.m */; };
+		9676DEA919D7604A0024192F /* UIColor+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 9676DEA819D7604A0024192F /* UIColor+FlatUI.m */; };
+		9676DEAB19D768500024192F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9676DEAA19D768500024192F /* Images.xcassets */; };
 		96D9A05417E6366600A9E946 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96D9A05317E6366600A9E946 /* CoreData.framework */; };
 		96D9A05717E63E8B00A9E946 /* JYJFavoritesTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D9A05617E63E8B00A9E946 /* JYJFavoritesTVC.m */; };
 /* End PBXBuildFile section */
@@ -83,6 +86,11 @@
 		96195D5117E6166D00215CCF /* JYJPredictionTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYJPredictionTVC.h; sourceTree = "<group>"; };
 		96195D5217E6166D00215CCF /* JYJPredictionTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYJPredictionTVC.m; sourceTree = "<group>"; };
 		96195D5417E61A8700215CCF /* JYJRouteListTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYJRouteListTVC.h; sourceTree = "<group>"; };
+		9676DEA419D75D730024192F /* TwoLabelTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoLabelTableViewCell.h; sourceTree = "<group>"; };
+		9676DEA519D75D730024192F /* TwoLabelTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoLabelTableViewCell.m; sourceTree = "<group>"; };
+		9676DEA719D7604A0024192F /* UIColor+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FlatUI.h"; sourceTree = "<group>"; };
+		9676DEA819D7604A0024192F /* UIColor+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FlatUI.m"; sourceTree = "<group>"; };
+		9676DEAA19D768500024192F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		96D9A05317E6366600A9E946 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		96D9A05517E63E8B00A9E946 /* JYJFavoritesTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYJFavoritesTVC.h; sourceTree = "<group>"; };
 		96D9A05617E63E8B00A9E946 /* JYJFavoritesTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYJFavoritesTVC.m; sourceTree = "<group>"; };
@@ -136,6 +144,7 @@
 		0895061F17AFEC800057ECDF /* Next Bus App */ = {
 			isa = PBXGroup;
 			children = (
+				0895063117AFEC800057ECDF /* MainStoryboard.storyboard */,
 				963641FE17E528F900AEFFAF /* Model */,
 				0895063417AFEC800057ECDF /* JYJBeginningViewController.h */,
 				0895063517AFEC800057ECDF /* JYJBeginningViewController.m */,
@@ -149,7 +158,9 @@
 				96195D5217E6166D00215CCF /* JYJPredictionTVC.m */,
 				96D9A05517E63E8B00A9E946 /* JYJFavoritesTVC.h */,
 				96D9A05617E63E8B00A9E946 /* JYJFavoritesTVC.m */,
-				0895063117AFEC800057ECDF /* MainStoryboard.storyboard */,
+				9676DEA419D75D730024192F /* TwoLabelTableViewCell.h */,
+				9676DEA519D75D730024192F /* TwoLabelTableViewCell.m */,
+				9676DEAA19D768500024192F /* Images.xcassets */,
 				0895062017AFEC800057ECDF /* Supporting Files */,
 			);
 			path = "Next Bus App";
@@ -158,6 +169,8 @@
 		0895062017AFEC800057ECDF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9676DEA719D7604A0024192F /* UIColor+FlatUI.h */,
+				9676DEA819D7604A0024192F /* UIColor+FlatUI.m */,
 				0895062817AFEC800057ECDF /* JYJAppDelegate.h */,
 				0895062917AFEC800057ECDF /* JYJAppDelegate.m */,
 				0895062117AFEC800057ECDF /* Next Bus App-Info.plist */,
@@ -257,6 +270,7 @@
 				0895062417AFEC800057ECDF /* InfoPlist.strings in Resources */,
 				0895062C17AFEC800057ECDF /* Default.png in Resources */,
 				0895062E17AFEC800057ECDF /* Default@2x.png in Resources */,
+				9676DEAB19D768500024192F /* Images.xcassets in Resources */,
 				0895063017AFEC800057ECDF /* Default-568h@2x.png in Resources */,
 				0895063317AFEC800057ECDF /* MainStoryboard.storyboard in Resources */,
 			);
@@ -269,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9676DEA919D7604A0024192F /* UIColor+FlatUI.m in Sources */,
 				0895062617AFEC800057ECDF /* main.m in Sources */,
 				96D9A05717E63E8B00A9E946 /* JYJFavoritesTVC.m in Sources */,
 				0895062A17AFEC800057ECDF /* JYJAppDelegate.m in Sources */,
@@ -286,6 +301,7 @@
 				0895065F17B08A750057ECDF /* JYJStopListTVC.m in Sources */,
 				080343C917B16AC200133AD3 /* JYJPredictionFetchModel.m in Sources */,
 				080343CC17B16AEF00133AD3 /* JYJPredictionFetchParser.m in Sources */,
+				9676DEA619D75D730024192F /* TwoLabelTableViewCell.m in Sources */,
 				080343CF17B16BD300133AD3 /* JYJPrediction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,6 +387,8 @@
 		0895063A17AFEC800057ECDF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -386,6 +404,8 @@
 		0895063B17AFEC800057ECDF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

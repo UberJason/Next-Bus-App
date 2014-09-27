@@ -72,6 +72,8 @@
     UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
     [refreshControl addTarget:self action:@selector(refresh:) forControlEvents:UIControlEventValueChanged];
     [self.tableView addSubview:refreshControl];
+    self.tableView.estimatedRowHeight = 70;
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
     
     self.refreshInterval = 5.0;
 }
@@ -82,6 +84,14 @@
     NSLog(@"routeTag: %@", self.model.route.tag);
     NSLog(@"stopTag: %@", self.model.stop.tag);
     NSLog(@"URL: %@", self.model.routeURL);
+    
+    if(!self.route)
+        self.navigationItem.rightBarButtonItems = @[];
+}
+
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self.tableView reloadData];
 }
 
 -(void)viewWillDisappear:(BOOL)animated {
@@ -108,12 +118,18 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Prediction Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    TwoLabelTableViewCell *cell = (TwoLabelTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     JYJPrediction *prediction = self.model.predictions[indexPath.row];
     
-    cell.textLabel.text = prediction.dirString;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ min", prediction.minutes];
+    cell.directionLabel.text = prediction.dirString;
+    cell.timeLabel.text = [NSString stringWithFormat:@"%@ min", prediction.minutes];
+    if(prediction.minutes.integerValue <= 10)
+        cell.timeLabel.textColor = [UIColor redColor];
+    else if(prediction.minutes.integerValue <= 20)
+        cell.timeLabel.textColor = [UIColor sunFlowerFlatColor];
+    else if(prediction.minutes.integerValue <= 30)
+        cell.timeLabel.textColor = [UIColor turquoiseFlatColor];
     
     return cell;
 }
