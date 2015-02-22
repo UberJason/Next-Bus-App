@@ -130,6 +130,8 @@
         cell.timeLabel.textColor = [UIColor sunFlowerFlatColor];
     else if(prediction.minutes.integerValue <= 30)
         cell.timeLabel.textColor = [UIColor turquoiseFlatColor];
+    else
+        cell.timeLabel.textColor = [UIColor blackColor];
     
     return cell;
 }
